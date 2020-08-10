@@ -1,0 +1,111 @@
+        body {
+            background: whiteSmoke;
+            font-family: sans-serif;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+        
+        #transcription,
+        #nose {
+            background: white;
+            border: 1px solid #ddd;
+        }
+        
+        #nose {
+            font-size: 30px;
+            width: 40%;
+            height: 400px;
+            justify-items: center;
+            text-align: center;
+        }
+        
+        #nose img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #transcription {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+            color: gray;
+            width: 40%;
+            height: 400px;
+            overflow: auto;
+        }
+        
+        #loading {
+            display: none;
+        }
+        
+        #transcription.done {
+            color: black;
+        }
+        
+        #main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100vw;
+            height: 500px;
+            padding: 0px;
+        }
+        
+        #footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 70px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @media(max-width:600px) {
+            #main {
+                padding: 0px;
+                height: 50%;
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+            #transcription {
+                font-size: 1.5rem;
+                color: gray;
+                width: 100%;
+                overflow: auto;
+                height: 200px;
+                margin: 0px;
+            }
+            #nose {
+                font-size: 1.5rem;
+                width: 100%;
+                height: 200px;
+                justify-items: center;
+                text-align: center;
+                margin-bottom: 50px;
+                margin-left: 0px;
+            }
+            #footer {
+                width: 100%;
+                height: 70px;
+                font-size: 1.0rem;
+                display: block;
+                position: relative;
+            }
+            body,
+            html {
+                font-size: 10px;
+                margin: 0px;
+                padding: 0px;
+                width: 100vw;
+            }
+            #picker {
+                width: 100%;
+            }
+        }
